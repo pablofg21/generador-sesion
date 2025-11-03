@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Generador de Sesión - Matemática</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Librería para exportar a PDF (html2pdf bundle) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <h1>Generador de Sesión — Matemática</h1>
+          <p class="subtitle">Diseña sesiones alineadas al currículo de primaria (MINEDU)</p>
+        </div>
+      </div>
+
+      <div class="actions-top">
+        <button class="btn yellow" id="btnPdf">Descargar PDF</button>
+        <button class="btn" id="btnCopy">Copiar</button>
+        <button class="btn" id="btnPrint">Imprimir</button>
+        <button class="btn ghost" id="btnClear">Limpiar</button>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <!-- Form -->
+      <section class="panel form-panel">
+        <h2>Datos para la sesión</h2>
+
+        <label>Institución educativa</label>
+        <input id="institucion" type="text" placeholder="I.E. N° ...">
+
+        <label>Grado</label>
+        <select id="grado">
+          <option value="1">1°</option>
+          <option value="2">2°</option>
+          <option value="3">3°</option>
+          <option value="4">4°</option>
+          <option value="5">5°</option>
+          <option value="6">6°</option>
+        </select>
+
+        <label>Docente</label>
+        <input id="docente" type="text" placeholder="Nombre del docente">
+
+        <div class="row">
+          <div class="col">
+            <label>Fecha</label>
+            <input id="fecha" type="date">
+          </div>
+          <div class="col">
+            <label>Duración (minutos)</label>
+            <input id="duracion" type="number" min="20" value="45">
+          </div>
+        </div>
+
+        <label>Campo temático</label>
+        <select id="campo">
+          <option value="Cantidad y operaciones">Cantidad y operaciones</option>
+          <option value="Regularidad, equivalencia y cambio">Regularidad, equivalencia y cambio</option>
+          <option value="Forma, movimiento y localización">Forma, movimiento y localización</option>
+          <option value="Gestión de datos e incertidumbre">Gestión de datos e incertidumbre</option>
+          <option value="Resolución de problemas">Resolución de problemas</option>
+        </select>
+
+        <label>Enfoque transversal</label>
+        <select id="transversal">
+          <option value="DE DERECHOS">DE DERECHOS</option>
+          <option value="INCLUSIVO">INCLUSIVO / ATENCIÓN A LA DIVERSIDAD</option>
+          <option value="INTERCULTURAL">INTERCULTURAL</option>
+          <option value="IGUALDAD DE GÉNERO">IGUALDAD DE GÉNERO</option>
+          <option value="AMBIENTAL">AMBIENTAL</option>
+          <option value="BIEN COMUN">ORIENTACIÓN AL BIEN COMÚN</option>
+          <option value="EXCELENCIA">BÚSQUEDA DE LA EXCELENCIA</option>
+        </select>
+
+        <label>Situación significativa</label>
+        <textarea id="situacion" placeholder="Describe el contexto real que motiva la sesión..."></textarea>
+
+        <div class="controls">
+          <button class="btn" id="btnGenerate">Generar sesión (local)</button>
+          <button class="btn blue" id="btnChatGPT">Generar con ChatGPT</button>
+        </div>
+
+        <p class="note">*Para usar ChatGPT configure y despliegue un proxy seguro que contenga su OPENAI_API_KEY; el botón enviará los datos a <code>/api/openai</code>.</p>
+      </section>
+
+      <!-- Preview / Salida -->
+      <section class="panel preview-panel">
+        <h2>Vista previa de la sesión</h2>
+        <div id="sessionOutput" class="session-output">
+          <!-- Aquí se inyecta la sesión -->
+          <div class="placeholder">Pulse "Generar sesión" o "Generar con ChatGPT" para ver el resultado aquí.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Generador de sesiones — Diseño azul y amarillo. Ajusta textos y rúbricas según tu UGEL.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

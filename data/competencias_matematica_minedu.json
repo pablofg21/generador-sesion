@@ -1,0 +1,80 @@
+{
+  "1": {
+    "grado": "1° de primaria",
+    "competencia": "Resuelve problemas de cantidad",
+    "capacidades": [
+      "Traduce cantidades a expresiones numéricas.",
+      "Comunica su comprensión sobre los números y las operaciones.",
+      "Usa estrategias y procedimientos de estimación y cálculo."
+    ],
+    "desempenos": [
+      "Representa cantidades hasta 20 usando material concreto y registros simples.",
+      "Resuelve problemas sencillos de adición y sustracción con apoyo concreto."
+    ]
+  },
+  "2": {
+    "grado": "2° de primaria",
+    "competencia": "Resuelve problemas de cantidad",
+    "capacidades": [
+      "Relaciona el número con la cantidad en diversos contextos.",
+      "Utiliza la adición y sustracción en problemas concretos.",
+      "Explica estrategias personales de solución."
+    ],
+    "desempenos": [
+      "Resuelve problemas de adición y sustracción con números hasta 100.",
+      "Representa procedimientos mediante dibujos y registros."
+    ]
+  },
+  "3": {
+    "grado": "3° de primaria",
+    "competencia": "Resuelve problemas de regularidad, equivalencia y cambio",
+    "capacidades": [
+      "Reconoce patrones y regularidades en secuencias y operaciones.",
+      "Aplica equivalencias y cambia unidades en contextos sencillos.",
+      "Utiliza estrategias de razonamiento para generalizar resultados."
+    ],
+    "desempenos": [
+      "Identifica y extiende patrones numéricos y geométricos.",
+      "Resuelve problemas que implican equivalencias sencillas."
+    ]
+  },
+  "4": {
+    "grado": "4° de primaria",
+    "competencia": "Resuelve problemas de forma, movimiento y localización",
+    "capacidades": [
+      "Describe y reconoce propiedades de figuras geométricas.",
+      "Relaciona movimientos y ubicaciones en el plano.",
+      "Aplica herramientas de representación espacial."
+    ],
+    "desempenos": [
+      "Representa y clasifica figuras según sus propiedades.",
+      "Resuelve problemas de localización y desplazamiento en planos sencillos."
+    ]
+  },
+  "5": {
+    "grado": "5° de primaria",
+    "competencia": "Resuelve problemas de gestión de datos e incertidumbre",
+    "capacidades": [
+      "Recopila, organiza e interpreta datos simples.",
+      "Usa representaciones gráficas para comunicar información.",
+      "Valora la incertidumbre y describe probabilidades básicas."
+    ],
+    "desempenos": [
+      "Elabora y lee tablas y gráficos sencillos.",
+      "Interpreta información estadística básica contextualizada."
+    ]
+  },
+  "6": {
+    "grado": "6° de primaria",
+    "competencia": "Resuelve problemas de cantidad con pensamiento algebraico inicial",
+    "capacidades": [
+      "Modela relaciones mediante expresiones y ecuaciones simples.",
+      "Aplica proporciones y porcentajes en contextos reales.",
+      "Utiliza estrategias algebraicas elementales para resolver problemas."
+    ],
+    "desempenos": [
+      "Resuelve problemas relacionados con razones, proporciones y porcentajes.",
+      "Plantea y resuelve ecuaciones sencillas que modelan situaciones reales."
+    ]
+  }
+}
